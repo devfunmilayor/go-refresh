@@ -8,9 +8,8 @@ func main() {
 	fmt.Println(card)
 	fmt.Println("Card Number:", cardNumber)
 
-	cardsValue := []string{"Ace of Spades", "Two of Hearts", "Three of Diamonds", newCard()}
-	fmt.Println("Cards Value:", cardsValue)
-
+	cardsValue := deck{"Ace of Spades", "Two of Hearts", "Three of Diamonds", newCard()}
+	cardsValue.print()
 	cardsValue = append(cardsValue, "Four of Clubs")
 	fmt.Println("Updated Cards Value:", cardsValue)
 
@@ -28,8 +27,6 @@ func main() {
 		fmt.Println(index, color)
 	}
 
-
-	
 }
 
 func newCard() string {
