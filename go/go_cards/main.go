@@ -13,6 +13,8 @@ func main() {
 	cardsValue = append(cardsValue, "Four of Clubs")
 	fmt.Println("Updated Cards Value:", cardsValue)
 
+	cardsValue.printWithIndex()
+
 	for index, card := range cardsValue {
 		fmt.Println(index, card)
 	}
